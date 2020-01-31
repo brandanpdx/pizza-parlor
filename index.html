@@ -12,33 +12,31 @@
 
 <body>
   <div class="container">
-    <!-- Website Header -->
     <div class="header">
       <h1>Epicodus Pizza Co.</h1>
     </div>
 
-    <!-- Form Inputs -->
-    <form>
-      <div class="form-group">
-        <div class="sizeform">
-          <h3>Choose the size of your pizza!</h3>
-          <select class="form-control" id="subject">
+    <div class="pizzamaker">
+      <form>
+        <div class="size">
+          <h3>Choose your pizza size:</h3>
+          <select class="form-control" id="piesize">
             <option disabled selected value> -- Select a size! -- </option>
             <option value="small">Small ($12.00)</option>
             <option value="medium">Medium ($16.00)</option>
             <option value="large">Large ($20.00)</option>
           </select>
         </div>
-        <div class="crustform">
+        <div class="crust">
           <h3>Choose the crust of your pizza!</h3>
-          <select class="form-control" id="subject">
+          <select class="form-control" id="piecrust">
             <option disabled selected value> -- Select a crust! -- </option>
             <option value="handtossed">Hand-tossed</option>
             <option value="Pan">Pan</option>
             <option value="thin">Thin crust</option>
           </select>
         </div>
-        <div class="toppingsform">
+        <div class="toppings">
           <div class="row">
             <h3>Please select the following toppings!</h3>
             <div class="col-md-6">
@@ -60,14 +58,10 @@
               <input type="checkbox" name="toppings" value="artichokes"> Artichokes<br>
             </div>
           </div>
-        </div>
         <button class="btn btn-success" type="submit">Order Now!</button>
-      </div>
-    </form>
-
-
+      </form>
+    </div>
   </div>
-
 
 </body>
 
