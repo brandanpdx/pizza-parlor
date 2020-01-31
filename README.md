@@ -10,11 +10,11 @@ This is the Epicodus independent end-of-week assignment for Friday, January 31, 
 
 | Specification                                                                                                          	| Input 	| Output                                                              	|
 |------------------------------------------------------------------------------------------------------------------------	|-------	|---------------------------------------------------------------------	|
-| If user does not enter any pizza options, the page returns an alert message                                     	| No input     	| "Please pick an available option!"                                           	|
-| User selects the desired size of their pizza from a select box, then clicks NEXT to move on to choosing the crust options                	| "Medium"     	| The size option is logged and user moves on to the crust options selector                                     	|
-| User selects the desired crust of their pizza from a select box, then clicks NEXT to move on to choosing pizza toppings               	| "Hand-tossed"     	| The crust option is logged and user moves on to choosing toppings
-| User selects the desired toppings of their pizza from checkboxes, then clicks NEXT to receive total summary of their pizza               	| "Sausage", "Olives" etc.     	| The toppings are logged and user moves on to seeing the summary of their pizza
-| If the user is satisifsed with the summary of their pizza order, they click ORDER NOW to place their order and receive an order confirmation                	| User clicks "ORDER NOW"   	| The confirmation page with order confirmation number, pizza summary, and price are displayed                                        	
+| If customer does not enter any pizza options, the page returns an alert message                                     	| No input     	| "Please pick an available option!"                                           	|
+| Customer selects the desired size of their pizza from a select box, then clicks NEXT to move on to choosing the crust options                	| "Medium"     	| The size option is logged and customer moves on to the crust options selector                                     	|
+| Customer selects the desired crust of their pizza from a select box, then clicks NEXT to move on to choosing pizza toppings               	| "Hand-tossed"     	| The crust option is logged and customer moves on to choosing toppings
+| Customer selects the desired toppings of their pizza from checkboxes, then clicks NEXT to receive total summary of their pizza               	| "Sausage", "Olives" etc.     	| The toppings are logged and customer moves on to seeing the summary of their pizza
+| If the customer is satisifsed with the summary of their pizza order, they click ORDER NOW to place their order and receive an order confirmation                	| customer clicks "ORDER NOW"   	| The confirmation page with order confirmation number, pizza summary, and price are displayed                                        	
 
 ## Setup/Installation Requirements
 
