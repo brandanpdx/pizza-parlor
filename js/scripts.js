@@ -1,5 +1,4 @@
 //Business logic
-
 //Pizza Constructor
 function Pizza(size, crust, toppings) {
   this.size = size;
@@ -16,37 +15,50 @@ Pizza.prototype.pricing = function() {
   } else if (this.size === "large") {
     price += 20;
   }
-  if (this.toppings.includes("proscuitto") || this.toppings.includes("salami")) {
+  if (this.toppings.includes("proscuitto")) {
     price += 2
   }
   return price;
 }
-
-//Toppings Array Prototype
+  
+//Push user selected toppings to array
 Pizza.prototype.addTopping = function(toppingToBePushed) {
   this.toppings.push(toppingToBePushed);
 }
 
-//User Logic
 
+//User Logic
 $(document).ready(function() {
   $(".pizzamaker").submit(function() {
     event.preventDefault();
+    
     var userSize = $("#piesize").val();
     var userCrust = $("#piecrust").val();
-    var chosenToppings = [];
-    var pie = new Pizza(userSize,userCrust,chosenToppings);
+    var userToppings = [];
+
+    var pie = new Pizza(userSize,userCrust,userToppings);
+
     $("input:checkbox[name=toppings]:checked").each(function() {
       var selectedToppings = $(this).val();
       pie.addTopping(selectedToppings);
-
+    });
 
     var showprice = pie.pricing();
+    var showsize = pie.size;
+    var showcrust = pie.crust;
 
-    console.log(showprice);
-    console.log(showtoppings);
-      
-  
-    });
+    var finalToppings = userToppings.join(", ")
+
+    $("#confirmsize").html(showsize);
+    $("#confirmcrust").html(showcrust);
+    $("#confirmtoppings").html(finalToppings);
+    $("#confirmprice").html(showprice);
+
+    $(".orderconfirmation").show();
+    $(".pizzamaker").hide();
+    
+
+    
+
   })
 })
