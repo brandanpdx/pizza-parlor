@@ -29,9 +29,14 @@ Pizza.prototype.addTopping = function(toppingToBePushed) {
 
 //User Logic
 $(document).ready(function() {
+  $(".splash").click(function() {
+    event.preventDefault();
+    $(".splash").hide();
+    $(".pizzamaker").show();
+  })
+
   $(".pizzamaker").submit(function() {
     event.preventDefault();
-    
     var userSize = $("#piesize").val();
     var userCrust = $("#piecrust").val();
     var userToppings = [];
@@ -56,9 +61,9 @@ $(document).ready(function() {
 
     $(".orderconfirmation").show();
     $(".pizzamaker").hide();
-    
+  
 
-    
+  
 
-  })
+})
 })
