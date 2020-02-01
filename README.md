@@ -15,7 +15,7 @@ This is the Epicodus independent end-of-week assignment for Friday, January 31, 
 | Customer selects the desired crust of their pizza from a select box | Pan | Pan
 | Customer selects the desired toppings of their pizza from checkboxes | Bacon | Bacon
 | If Customer selects "Prosciutto" as one of their toppings, $2 is added to the total order | Prosciutto | $2 added to total order
-| If the customer is satisifsed with the summary of their pizza order, they click ORDER NOW to place their order and receive an order confirmation                	| Customer clicks "Order Now"   	| Confirmation page with pizza summary, total price, and randomly generated order confirmation number.                                      	
+| If the customer is satisifsed with their selected pizza options, they click "Order Now" to place their order and receive an order confirmation                	| Customer clicks "Order Now"   	| Confirmation page with pizza summary, total price, and randomly generated order confirmation number.                                      	
 
 ## Setup/Installation Requirements
 
