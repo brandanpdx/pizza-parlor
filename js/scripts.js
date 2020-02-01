@@ -61,9 +61,6 @@ $(document).ready(function() {
 
     $(".orderconfirmation").show();
     $(".pizzamaker").hide();
-  
 
-  
-
-})
+  })
 })

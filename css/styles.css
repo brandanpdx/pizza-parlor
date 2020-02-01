@@ -1,13 +1,47 @@
 body {
-  background: black;
-}
+  background: rgb(7, 7, 7);
+  font-family: 'Staatliches', Arial, Helvetica, sans-serif;}
 
 .splash {
   text-align: center;
-  font-family: 'Staatliches', cursive;
-  font-size: 75px;
+  font-family: 'Staatliches', Arial, Helvetica, sans-serif;
   margin-top: 400px;
   color: white;
+}
+
+.splash h1 {
+  font-size: 120px;
+}
+
+.splash p {
+  font-size: 50px;
+}
+
+.splash button.btn.btn-success {
+  font-size: 25px;
+  padding: 10px;
+  letter-spacing: 1px;
+}
+
+.toppings {
+  margin: 15px;
+}
+
+.pizzamaker h1 {
+  font-size: 75px;
+}
+
+.pizzamaker h3 {
+  font-size: 40px;
+}
+
+#piecrust.form-control, #piesize.form-control {
+  font-size: 20px;
+}
+
+
+.pizzamaker h4{
+  font-size: 30px;
 }
 
 
@@ -15,8 +49,20 @@ body {
   display: none;
 }
 
+.orderconfirmation h1 {
+  color: white;
+  font-size: 70px;
+}
+
+.orderconfirmation h4 {
+  color: white;
+  font-size: 50px;
+}
+
 .pizzamaker {
   display: none;
+  color: white;
+  font-size: 40px;
 }
 
 
