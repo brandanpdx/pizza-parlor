@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -10,7 +9,6 @@
   <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
   <title>Pizza Parlor</title>
 </head>
-
 <body>
   <div class="container">
     <!-- Splash Screen -->
@@ -20,11 +18,12 @@
           <source src="video/splash.mp4" type="video/mp4">
         </video>
       </div>
-      <h1>Epicodus Pizza Co.</h1>
-      <p>400 SW 6th Avenue, Portland, OR 97204</p>
-      <button class="btn btn-success" type="submit">Start your online order</button>
+      <div class="splashtextbox">
+        <h1>Epicodus Pizza Co.</h1>
+        <p>400 SW 6th Avenue, Portland, OR 97204</p>
+        <button class="btn btn-success" type="submit">Start your online order</button>
+      </div>
     </div>
-
     <!-- Pizza Maker -->
     <div class="pizzamaker">
       <div class="header">
@@ -41,7 +40,7 @@
           </select>
         </div>
         <div class="crust">
-          <h3>Choose the crust of your pizza!</h3>
+          <h3>Choose your pizza crust:</h3>
           <select class="form-control" id="piecrust">
             <option disabled selected value> -- Select a crust! -- </option>
             <option value="handtossed">Hand-tossed</option>
@@ -51,7 +50,7 @@
         </div>
         <div class="toppings">
           <div class="row">
-            <h3>Please select the following toppings!</h3>
+            <h3>Choose your toppings:</h3>
             <div class="col-md-6">
               <h4>Meats</h4>
               <input type="checkbox" name="toppings" value="pepperoni"> Pepperoni<br>
@@ -74,16 +73,14 @@
         <button class="btn btn-success" type="submit">Order Now!</button>
       </form>
     </div>
-
     <div class="orderconfirmation">
-      <h1>Please review your order below:</h1>
+      <h1>Order Confirmation</h1>
       <h4>Size: <span id="confirmsize"></span></h4>
       <h4>Crust: <span id="confirmcrust"></span></h4>
       <h4>Toppings: <span id="confirmtoppings"></span></h4>
       <h4>Grand Total: $<span id="confirmprice"></span>.00</h4>
+      <h4>Thanks for your business. We will see you soon!</h4>
     </div>
   </div>
-
 </body>
-
 </html>

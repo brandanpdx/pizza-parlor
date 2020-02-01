@@ -5,28 +5,25 @@ function Pizza(size, crust, toppings) {
   this.crust = crust;
   this.toppings = toppings;
 }
-//Pricing Prototype
+//Pricing Prototypes
 Pizza.prototype.pricing = function() {
-  var price = 0;
+  var price;
   if (this.size === "small") {
-    price += 10;
+    price = 10;
   } else if (this.size === "medium") {
-    price += 15;
+    price = 15;
   } else if (this.size === "large") {
-    price += 20;
+    price = 20;
   }
   if (this.toppings.includes("proscuitto")) {
-    price += 2
+    price = price + 2
   }
   return price;
 }
-  
 //Push user selected toppings to array
 Pizza.prototype.addTopping = function(toppingToBePushed) {
   this.toppings.push(toppingToBePushed);
 }
-
-
 //User Logic
 $(document).ready(function() {
   $(".splash").click(function() {
@@ -61,6 +58,5 @@ $(document).ready(function() {
 
     $(".orderconfirmation").show();
     $(".pizzamaker").hide();
-
   })
 })

@@ -1,6 +1,13 @@
 body {
   background: rgb(7, 7, 7);
-  font-family: 'Staatliches', Arial, Helvetica, sans-serif;}
+  font-family: 'Staatliches', Arial, Helvetica, sans-serif;
+  background-image: url(../img/background.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 .splash {
   text-align: center;
@@ -44,27 +51,39 @@ body {
   font-size: 30px;
 }
 
+.pizzamaker button.btn.btn-success {
+  font-size: 25px;
+  padding: 10px;
+  letter-spacing: 1px;
+  width: 100%;
+}
+
 
 .orderconfirmation {
   display: none;
+  margin-left: 420px;
+  margin-top: 100px;
 }
 
 .orderconfirmation h1 {
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 70px;
+  margin-bottom: 100px;
 }
 
 .orderconfirmation h4 {
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 50px;
+  margin-top: 50px;
 }
 
 .pizzamaker {
   display: none;
   color: white;
   font-size: 40px;
+  margin-left: 500px;
+  margin-top: 80px;
 }
-
 
 .fullscreen-bg {
   position: fixed;
@@ -82,4 +101,18 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+      width:100%;
+      height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .fullscreen-bg__video { 
+      width:auto;
+      height: 100%;
+  }
 }
