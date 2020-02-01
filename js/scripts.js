@@ -51,10 +51,13 @@ $(document).ready(function() {
 
     var finalToppings = userToppings.join(", ")
 
+    var confirmationNumber = (Math.random() * 1000000).toFixed(0);
+
     $("#confirmsize").html(showsize);
     $("#confirmcrust").html(showcrust);
     $("#confirmtoppings").html(finalToppings);
     $("#confirmprice").html(showprice);
+    $("#confirmationnumber").html(confirmationNumber);
 
     $(".orderconfirmation").show();
     $(".pizzamaker").hide();
